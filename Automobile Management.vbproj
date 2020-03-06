@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8626AC0D-6164-4D0A-9A2B-4FF679063FC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Automobile_Management.My.MyApplication</StartupObject>
+    <RootNamespace>Automobile_Management</RootNamespace>
+    <AssemblyName>Automobile Management</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Automobile Management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Automobile Management.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutBox1.Designer.vb">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AboutBox1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Autodb2DataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autodb2DataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Autodb2DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autodb2DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Autodb2DataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Autodb2DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Baleno.Designer.vb">
+      <DependentUpon>Baleno.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Baleno.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bcr.Designer.vb">
+      <DependentUpon>bcr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="bcr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billcr.Designer.vb">
+      <DependentUpon>billcr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="billcr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BillingForm.Designer.vb">
+      <DependentUpon>BillingForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BillingForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking form.Designer.vb">
+      <DependentUpon>booking form.vb</DependentUpon>
+    </Compile>
+    <Compile Include="booking form.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carnival.Designer.vb">
+      <DependentUpon>Carnival.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Carnival.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Creta.Designer.vb">
+      <DependentUpon>Creta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Creta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrystalReport2.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport2.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport3.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport3.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReport4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReport4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="customer.Designer.vb">
+      <DependentUpon>customer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="customer.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cars.Designer.vb">
+      <DependentUpon>Cars.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Cars.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Elantra.Designer.vb">
+      <DependentUpon>Elantra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Elantra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Hyundai.Designer.vb">
+      <DependentUpon>Hyundai.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Hyundai.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="icr.Designer.vb">
+      <DependentUpon>icr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="icr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ignis.Designer.vb">
+      <DependentUpon>Ignis.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Ignis.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InquiryForm.Designer.vb">
+      <DependentUpon>InquiryForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InquiryForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kia.Designer.vb">
+      <DependentUpon>Kia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kia.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kona.Designer.vb">
+      <DependentUpon>Kona.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Kona.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mainmenu.Designer.vb">
+      <DependentUpon>mainmenu.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mainmenu.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Model3.Designer.vb">
+      <DependentUpon>Model3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Model3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelS.Designer.vb">
+      <DependentUpon>ModelS.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModelS.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModelY.Designer.vb">
+      <DependentUpon>ModelY.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ModelY.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Nexa.Designer.vb">
+      <DependentUpon>Nexa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Nexa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Roadster.Designer.vb">
+      <DependentUpon>Roadster.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Roadster.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Scross.Designer.vb">
+      <DependentUpon>Scross.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Scross.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Seltos.Designer.vb">
+      <DependentUpon>Seltos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Seltos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="signup.Designer.vb">
+      <DependentUpon>signup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="signup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tesla.Designer.vb">
+      <DependentUpon>Tesla.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tesla.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tucson.Designer.vb">
+      <DependentUpon>Tucson.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tucson.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AboutBox1.resx">
+      <DependentUpon>AboutBox1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Baleno.resx">
+      <DependentUpon>Baleno.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bcr.resx">
+      <DependentUpon>bcr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billcr.resx">
+      <DependentUpon>billcr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BillingForm.resx">
+      <DependentUpon>BillingForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="booking form.resx">
+      <DependentUpon>booking form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Carnival.resx">
+      <DependentUpon>Carnival.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Creta.resx">
+      <DependentUpon>Creta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport2.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport2.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport3.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport3.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReport4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReport4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="customer.resx">
+      <DependentUpon>customer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cars.resx">
+      <DependentUpon>Cars.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Elantra.resx">
+      <DependentUpon>Elantra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Hyundai.resx">
+      <DependentUpon>Hyundai.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="icr.resx">
+      <DependentUpon>icr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ignis.resx">
+      <DependentUpon>Ignis.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InquiryForm.resx">
+      <DependentUpon>InquiryForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kia.resx">
+      <DependentUpon>Kia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kona.resx">
+      <DependentUpon>Kona.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mainmenu.resx">
+      <DependentUpon>mainmenu.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Model3.resx">
+      <DependentUpon>Model3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelS.resx">
+      <DependentUpon>ModelS.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModelY.resx">
+      <DependentUpon>ModelY.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Nexa.resx">
+      <DependentUpon>Nexa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Roadster.resx">
+      <DependentUpon>Roadster.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Scross.resx">
+      <DependentUpon>Scross.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Seltos.resx">
+      <DependentUpon>Seltos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="signup.resx">
+      <DependentUpon>signup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tesla.resx">
+      <DependentUpon>Tesla.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tucson.resx">
+      <DependentUpon>Tucson.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Autodb2DataSet.xsc">
+      <DependentUpon>Autodb2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Autodb2DataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Autodb2DataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Autodb2DataSet.xss">
+      <DependentUpon>Autodb2DataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Autodb2DataSet1.xsc">
+      <DependentUpon>Autodb2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Autodb2DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Autodb2DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Autodb2DataSet1.xss">
+      <DependentUpon>Autodb2DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Autodb2DataSet2.xsc">
+      <DependentUpon>Autodb2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Autodb2DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Autodb2DataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Autodb2DataSet2.xss">
+      <DependentUpon>Autodb2DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Autodb2.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
