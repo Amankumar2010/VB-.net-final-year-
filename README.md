@@ -1,5 +1,6 @@
 # VB-.net-final-year-
- A Project Report On Auto Shop Submitted in partial fulfilment of the requirements for the award of degree of  Bachelor of Business Administration (Computer Application)  Submitted By:  Aman Kumar
+ A Project Report On Auto Shop Submitted in partial fulfilment of the requirements for the award Bachelors Degree
+ Submitted By:  Aman Kumar
 1: INTRODUCTION
 
 
